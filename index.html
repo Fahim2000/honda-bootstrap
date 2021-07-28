@@ -22,15 +22,44 @@
 
     <!-- HEADER SECTION STARTS -->
     <header>
-        <section class="container">
-            <div class="row d-flex align-items-center justify-content-around">
-                <div class="col-12 col-lg-5">
+        <section class="container-fluid container-lg">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-12 col-lg-5 mb-4">
                     <p class="">Computer-controlled digital transistorized with electronic advance</p>
                     <h1>Honda CBR 300R</h1>
                     <p>The Honda CBR 150R 2021 Indonesia comes with a full LED setup of lights. The headlight,
                         indicators, and taillight are
                         all LED.</p>
-                    <button class="purchase-btn">Purchase</button>
+
+                    <!-- <button class="purchase-btn">Purchase</button> -->
+
+                    <!-- Purchase btn modal  -->
+                            <!-- Button trigger modal -->
+                            <button  class="purchase-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               Purchase
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">To purchase this product please do the following</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fw-bold">
+                                             <br>To purchase this product you must pay advance through <strong>Bkash</strong> you will get your product within 1 week  <br>
+                                            Bkash Number : 01887845856
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Pay Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                  
                 </div>
                 <div class="col-12 col-lg-5">
                     <div>
@@ -40,6 +69,8 @@
             </div>
         </section>
     </header>
+
+    
     <!-- HEADER SECTION ENDS -->
 
     <!-- MAIN SECTION -->
@@ -47,20 +78,20 @@
     <main>
         <!-- Featured bike section starts  -->
         <section class="container my-5 bike">
-            <h1 class="text-center fw-bold">Fetured Bikes 2021</h1>
-            <p class="text-center">Fetured Bikes 2021</p>
+            <h1 class="text-center fw-bold">Featured Bikes 2021</h1>
+            <p class="text-center">Featured Bikes 2021</p>
             <div class="row d-flex align-items-lg-center justify-content-lg-around mt-5">
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 mb-5">
                     <div>
                         <img src="./images/feature-bike.jpg" alt="" class="img-fluid gray">
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 mb-5">
                     <div>
                         <img src="./images/feature-bike.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 mb-5">
                     <div>
                         <img src="./images/feature-bike.jpg" alt="" class="img-fluid gray">
                     </div>
@@ -75,7 +106,7 @@
 
             <!-- CLIENT CARD SECTION -->
 
-            <div class="row row-cols-1 row-cols-md-3 g-5 client ">
+            <div class="row row-cols-1 row-cols-md-3 g-4 client ">
                 <div class="col">
                     <div class="card h-100 ">
                         <img src="./images/user-1.png" class="card-img-top" alt="...">
@@ -233,6 +264,44 @@
             </div>
         </section>
         <!-- FAQ section ends -->
+
+
+        <!-- newsletter section starts -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2 style="color: black;">SUBSCRIBE NOW</h2>
+                        <h6 class="content-tuned fs-5" style="color: black;">Subscribe to our newsletter and stay tuned with future updates</h6>
+                      <div class="row ms-lg-5">
+                          <div class="col-12 col-lg-6 mb-4">
+                                <div class="input-group"> <input type="email" class="form-control" placeholder="Enter email to subscribe"> <span
+                                        class="input-group-btn"> 
+                              
+                          </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <button class="btn" type="submit">Subscribe Now</button> </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter section ends  -->
+
+
+    <!-- social media section starts -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Follow us on social media</h1>
+        <div class="text-center">
+            <i class="fab fa-facebook-f me-4"></i>
+            <i class="fab fa-youtube  me-4"></i>
+            <i class="fab fa-twitter  me-4"></i>
+        </div>
+    </section>
+    <!-- social media section ends -->
     </main>
 
 
